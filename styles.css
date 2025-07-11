@@ -1,0 +1,177 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: roboto, arial;
+  height: 2000px;
+  background-color: #16243E;
+}
+p{
+  margin: 0;
+}
+.nav-bar {
+  background-color: #16243E;
+  position: fixed;
+  color: white;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  z-index: 200;
+
+}
+.section-one {
+
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.company-logo{
+  margin-right: 15px;
+  
+}
+
+.company-logo-img {
+  border-radius: 50%;
+ 
+}
+.company-name{
+  
+}
+.section-two {
+  
+  flex: 1;
+  
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-evenly;
+  list-style: none;
+  transition: all 0.15s ease;
+}
+li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(216, 81, 28);
+}
+.section-three {
+  
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.hero{
+  padding-top: 60px;
+  margin-bottom: 55px;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.hero img{
+  position: absolute;
+}
+.hero p{
+  position: relative;
+  margin-left: 175px;
+  margin-top: 75px;
+  font-size: 2.5em;
+  letter-spacing: 1.1px;
+  line-height: 55px;
+  font-weight: bold;
+  width: 400px;
+  margin-bottom: 30px;
+}
+.blur-bg{
+  backdrop-filter: blur(5px);
+  padding: 7px 18px 7px 18px;
+  border: 1px solid rgb(132, 131, 131);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+  width: max-content;
+  margin-left: 175px;
+  margin:0 ;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+.blur-bg-two{
+  backdrop-filter: blur(5px);
+  padding: 7px 18px 7px 18px;
+  width: max-content;
+  margin-left: 175px;
+  border: 1px solid rgb(132, 131, 131);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 5px;
+  margin-top: -1px;
+}
+.first-paragraph{
+  font-size: 0.6em;
+  margin-bottom: 5px;
+}
+.second-paragraph{
+  font-size: 0.9em;
+}
+.blur-bg-two hr{
+  width: 1px;
+  height: 30px;
+  border: none;
+  background-color: white;
+}
+.first-animation {
+  animation: slide-up 0.5s ease alternate;
+  animation-timeline: view(50% 0%);
+ 
+}
+
+@keyframes slide-up {
+  0%{
+    transform: translateY(100%);
+    opacity: 0.1;
+    transform: scale(0.5);
+  }
+  100%{
+     transform: translateY(0);
+     opacity: 1;
+     transform: scale(1);
+  }
+}
+.buy-button{
+  cursor: pointer;
+}
+
+.add-property-hover:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.company-name:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+img:hover{
+  cursor: pointer;
+}
+.final-img{
+  animation: final-img 0.15s ease alternate;
+  animation-timeline: view(50% 0%);
+}
+@keyframes final-img{
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:visited{
+  color: white;
+}
